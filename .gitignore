@@ -7,3 +7,4 @@
 node_modules/
 .idea
 /CS 465 Full Stack Guide*
+.env
