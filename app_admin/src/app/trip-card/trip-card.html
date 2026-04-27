@@ -7,6 +7,8 @@
     </h5>
     <h6 class="card-subtitle mb-2 text-body-secondary">{{trip.resort}}</h6>
     <p class="card-text" [innerHTML]="trip.description"></p>
-    <a (click)="editTrip(trip)" class="btn btn-primary">Edit Trip</a>
+    <div *ngIf="isLoggedIn()">
+      <a (click)="editTrip(trip)" class="btn btn-primary">Edit Trip</a>
+    </div>
   </div>
 </div>
